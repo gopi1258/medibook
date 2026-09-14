@@ -165,6 +165,39 @@ an OTP and read the code from the API log (or set `MEDIBOOK_DEV_OTP=1`).
 
 ---
 
+## Screenshots
+
+Captured from the running app: an `expo export --platform web` build rendered in headless Chrome at
+430×932 @2×, driving the real patient journey (J1 → J3) through to a confirmed booking.
+
+**Patient app**
+
+| Onboarding | Sign-in · OTP | Home | Discover |
+|---|---|---|---|
+| ![Onboarding](docs/screenshots/patient-01-onboarding.jpg) | ![Sign-in · OTP](docs/screenshots/patient-02-signin.jpg) | ![Home](docs/screenshots/patient-03-home.jpg) | ![Discover](docs/screenshots/patient-04-discover.jpg) |
+
+| Advanced filters | Doctor profile | Slot picker | Booking sheet |
+|---|---|---|---|
+| ![Advanced filters](docs/screenshots/patient-05-filters.jpg) | ![Doctor profile](docs/screenshots/patient-06-doctor-profile.jpg) | ![Slot picker](docs/screenshots/patient-07-slots.jpg) | ![Booking sheet](docs/screenshots/patient-08-booking-sheet.jpg) |
+
+| Payment | Confirmation | Appointments | Appointment detail |
+|---|---|---|---|
+| ![Payment](docs/screenshots/patient-09-payment.jpg) | ![Confirmation](docs/screenshots/patient-10-confirmation.jpg) | ![Appointments](docs/screenshots/patient-11-appointments.jpg) | ![Appointment detail](docs/screenshots/patient-12-appointment-detail.jpg) |
+
+| Alerts inbox | Profile |
+|---|---|
+| ![Alerts inbox](docs/screenshots/patient-13-alerts.jpg) | ![Profile](docs/screenshots/patient-14-profile.jpg) |
+
+**Doctor app**
+
+| Onboarding | Today | Schedule | Patients |
+|---|---|---|---|
+| ![Onboarding](docs/screenshots/doctor-01-onboarding.jpg) | ![Today](docs/screenshots/doctor-02-today.jpg) | ![Schedule](docs/screenshots/doctor-03-schedule.jpg) | ![Patients](docs/screenshots/doctor-04-patients.jpg) |
+
+| Profile |
+|---|
+| ![Profile](docs/screenshots/doctor-05-profile.jpg) |
+
 ## Preview
 
 Both apps are published as a static web build from the `gh-pages` branch — no install, no API:
