@@ -23,7 +23,9 @@
         flex: 1;
       }
     </style>
-  </head>
+  <script>/* SPA fallback: GitHub Pages serves this file (the site-root 404.html) for any unmatched path. Doctor routes must boot the doctor app, not the patient app. */
+(function(){var p=location.pathname;if(p.indexOf("/medibook/doctor")===0&&p!=="/medibook/doctor/"){location.replace("/medibook/doctor/");}})();</script>
+</head>
 
   <body>
     <!-- Use static rendering with Expo Router to support running without JavaScript. -->
