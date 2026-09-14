@@ -1,0 +1,40 @@
+{
+  "expo": {
+    "name": "MediBook",
+    "slug": "medibook-patient",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "scheme": "medibook",
+    "userInterfaceStyle": "light",
+    "backgroundColor": "#FDF2F4",
+    "newArchEnabled": true,
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.medibook.patient"
+    },
+    "android": {
+      "package": "com.medibook.patient",
+      "adaptiveIcon": {
+        "backgroundColor": "#FDF2F4"
+      },
+      "predictiveBackGestureEnabled": false
+    },
+    "web": {
+      "bundler": "metro",
+      "output": "single"
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-splash-screen",
+        {
+          "backgroundColor": "#FDF2F4"
+        }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": false,
+      "reactCompiler": false
+    }
+  }
+}

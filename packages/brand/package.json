@@ -1,0 +1,25 @@
+{
+  "name": "@medibook/brand",
+  "version": "1.0.0",
+  "private": true,
+  "description": "MediBook design system — tokens, typography, logo and React Native primitives shared by both apps.",
+  "main": "src/index.ts",
+  "types": "src/index.ts",
+  "sideEffects": false,
+  "files": ["src"],
+  "scripts": {
+    "typecheck": "tsc --noEmit"
+  },
+  "peerDependencies": {
+    "react": ">=19.0.0",
+    "react-native": ">=0.76.0"
+  },
+  "dependencies": {
+    "@expo-google-fonts/inter": "^0.4.2",
+    "@expo-google-fonts/poppins": "^0.4.1",
+    "expo-font": "~57.0.4",
+    "expo-linear-gradient": "~57.0.2",
+    "react-native-safe-area-context": "~5.7.0",
+    "react-native-svg": "15.15.5"
+  }
+}

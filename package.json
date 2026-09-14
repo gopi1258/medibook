@@ -1,0 +1,32 @@
+{
+  "name": "medibook",
+  "private": true,
+  "version": "1.0.0",
+  "description": "MediBook — doctor consultation & appointment platform (patient app, doctor app, booking API)",
+  "license": "UNLICENSED",
+  "engines": {
+    "node": ">=22.0.0"
+  },
+  "workspaces": [
+    "packages/*",
+    "apps/*",
+    "services/*"
+  ],
+  "devDependencies": {
+    "@types/node": "^22.18.6",
+    "typescript": "~6.0.3"
+  },
+  "scripts": {
+    "api": "npm run dev --workspace @medibook/api",
+    "api:seed": "npm run seed --workspace @medibook/api",
+    "api:test": "npm run test --workspace @medibook/api",
+    "typecheck": "npm run typecheck --workspaces --if-present",
+    "typecheck:brand": "npm run typecheck --workspace @medibook/brand",
+    "typecheck:core": "npm run typecheck --workspace @medibook/core",
+    "typecheck:api": "npm run typecheck --workspace @medibook/api",
+    "typecheck:patient": "npm run typecheck --workspace @medibook/patient",
+    "typecheck:doctor": "npm run typecheck --workspace @medibook/doctor",
+    "patient": "npm run start --workspace @medibook/patient",
+    "doctor": "npm run start --workspace @medibook/doctor"
+  }
+}

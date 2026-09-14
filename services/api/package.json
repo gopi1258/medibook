@@ -1,0 +1,22 @@
+{
+  "name": "@medibook/api",
+  "version": "1.0.0",
+  "private": true,
+  "description": "MediBook local backend — modular booking engine (Fastify + SQLite) implementing the TRD §7 contract.",
+  "type": "module",
+  "main": "src/server.ts",
+  "scripts": {
+    "dev": "node --watch src/server.ts",
+    "start": "node src/server.ts",
+    "seed": "node src/seed.ts",
+    "seed:reset": "node src/seed.ts --reset",
+    "test": "node --test --test-concurrency=1 test/*.test.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@medibook/core": "*",
+    "@fastify/cors": "^11.3.0",
+    "fastify": "^5.12.4",
+    "zod": "^3.25.76"
+  }
+}

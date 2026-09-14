@@ -1,0 +1,13 @@
+{
+  "name": "@medibook/core",
+  "version": "1.0.0",
+  "private": true,
+  "description": "MediBook shared domain layer — types, time/timezone utilities, PRD §13 rules, slot engine, service contract, HTTP + offline mock clients.",
+  "main": "src/index.ts",
+  "types": "src/index.ts",
+  "sideEffects": false,
+  "files": ["src"],
+  "scripts": {
+    "typecheck": "tsc --noEmit"
+  }
+}
