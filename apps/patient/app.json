@@ -34,7 +34,8 @@
     ],
     "experiments": {
       "typedRoutes": false,
-      "reactCompiler": false
+      "reactCompiler": false,
+      "baseUrl": "/medibook"
     }
   }
 }

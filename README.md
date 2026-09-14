@@ -15,6 +15,8 @@ even when 200 requests hit it simultaneously (see [Verification](#verification))
 - Product requirements: [`docs/PRD.md`](docs/PRD.md)
 - Technical requirements: [`docs/TRD.md`](docs/TRD.md)
 - Brand tokens & rules: [`docs/BRAND_SPEC.md`](docs/BRAND_SPEC.md)
+- **Live web preview:** <https://gopi1258.github.io/medibook/> (patient) ·
+  <https://gopi1258.github.io/medibook/doctor/> (doctor) — no install, runs on the bundled mock data
 
 ---
 
@@ -162,6 +164,34 @@ To run the whole stack together: start the API, seed it, point both apps at it, 
 an OTP and read the code from the API log (or set `MEDIBOOK_DEV_OTP=1`).
 
 ---
+
+## Preview
+
+Both apps are published as a static web build from the `gh-pages` branch — no install, no API:
+
+| App | URL |
+|---|---|
+| Patient app | <https://gopi1258.github.io/medibook/> |
+| Doctor app | <https://gopi1258.github.io/medibook/doctor/> |
+
+It runs entirely on the bundled mock dataset. Sign in with any phone number and any 6-digit code
+(`123456` is the documented demo code).
+
+To be precise about what this is: **GitHub cannot run a React Native app.** This is an
+`expo export --platform web` build of the same screens rendered through `react-native-web` — a
+real, clickable preview of the UI and flows, not a native iOS/Android build. For the native app
+use `npm run patient` / `npm run doctor` and Expo Go.
+
+To rebuild the published site:
+
+```bash
+cd apps/patient && npx expo export --platform web --output-dir ../../gh-pages
+cd apps/doctor  && npx expo export --platform web --output-dir ../../gh-pages/doctor
+cp gh-pages/index.html gh-pages/404.html   # SPA fallback for deep links
+```
+
+Both apps set `experiments.baseUrl` in `app.json` (`/medibook` and `/medibook/doctor`) so the
+exported asset paths resolve under the GitHub Pages project subpath.
 
 ## Verification
 
